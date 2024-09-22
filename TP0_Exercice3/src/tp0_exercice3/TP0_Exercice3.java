@@ -27,6 +27,10 @@ public class TP0_Exercice3 {
         System.out.println("5) modulo");
         
         operator=sc.nextInt();
+        
+        if ((operator<0)||(operator>5)) {
+            System.out.println("L'opérateur choisi n'est pas valide");
+    }
         int operande1;
         Scanner sc1=new Scanner(System.in);
         System.out.println("Entrez la première valeur :");
