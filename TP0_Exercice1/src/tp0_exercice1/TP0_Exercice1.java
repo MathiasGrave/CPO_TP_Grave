@@ -5,6 +5,8 @@
  */
 package tp0_exercice1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Grave
@@ -17,11 +19,11 @@ public class TP0_Exercice1 {
     public static void main(String[] args) {
         System.out.println("Bonjour");
         System.out.print("Au revoir");
-        int age;
-        Sscanner sc;
+        String nom;
+        Scanner sc;
         sc = new Scanner(System.in);
-        System.out.println("Bonjour, quel est votre âge ?");
-        age=sc.nextLine();
+        System.out.println("Bonjour, quel est votre nom ?");
+        nom=sc.nextLine();
         
         
     }
