@@ -30,8 +30,10 @@ int ind; //indice
 result=0;
 // Addition des nb premiers entiers
 ind=1;
-while (result <= nb) {
+while (ind <= nb) {
 result=result+ind;
+ind+=1;
+        
 }
 // Affichage du resultat
 System.out.println();
