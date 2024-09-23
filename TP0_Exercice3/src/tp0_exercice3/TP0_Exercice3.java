@@ -17,7 +17,7 @@ public class TP0_Exercice3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int operator;
+        int operateur;
         Scanner sc=new Scanner(System.in);
         System.out.println("Please enter the operator :");
         System.out.println("1) add");
@@ -26,10 +26,12 @@ public class TP0_Exercice3 {
         System.out.println("4) divide");
         System.out.println("5) modulo");
         
-        operator=sc.nextInt();
+        operateur=sc.nextInt();
         
-        if ((operator<0)||(operator>5)) {
-            System.out.println("L'opérateur choisi n'est pas valide");
+        while ((operateur<0)||(operateur>5)) {
+            System.out.println("L'opérateur choisi n'est pas valide, veuillez un entrer un autre :");
+            Scanner var=new Scanner(System.in);
+            operateur=var.nextInt();
     }
         int operande1;
         Scanner sc1=new Scanner(System.in);
@@ -41,23 +43,23 @@ public class TP0_Exercice3 {
         System.out.println("Entrez la deuxième valeur :");
         operande2=sc2.nextInt();
         int resultat;
-        if (operator==1) {
+        if (operateur==1) {
             resultat=operande1+operande2;
             System.out.println("Le résultat est : "+ resultat);
         }
-        else if (operator==2) {
+        else if (operateur==2) {
             resultat=operande1-operande2;
             System.out.println("Le résultat est : "+resultat);
         }
-        else if (operator==3) {
+        else if (operateur==3) {
             resultat=operande1*operande2;
             System.out.println("Le résultat est : "+resultat);
         }
-        else if (operator==4) {
+        else if (operateur==4) {
             resultat=operande1/operande2;
             System.out.println("Le résultat est : "+resultat);
         }
-        else if (operator==5) {
+        else if (operateur==5) {
             resultat=operande1%operande2;
             System.out.println("Le résultat est : "+resultat);
         }
