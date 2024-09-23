@@ -1,8 +1,4 @@
-/*
- * TP1
- * Exercice 2
- * Mathias Grave
- */
+
 package tp1_convertisseur_grave;
 
 import java.util.Scanner;
