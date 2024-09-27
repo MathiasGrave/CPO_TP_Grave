@@ -1,4 +1,8 @@
-
+/*
+ * TP1
+ * Exercice 1
+ * Mathias Grave
+ */
 package tp1_convertisseur_grave;
 
 import java.util.Scanner;
@@ -30,9 +34,24 @@ public class TP1_convertisseur_GRAVE {
         }
         else if (conv==2) {
             tCelcius=KelvinversCelcius(temp);
-            
+            System.out.println(temp+" Kelvin est égal à "+tCelcius+" degrés ");    
         }
-
+        else if (conv==3){
+            tCelcius=FarenheitversCelcius(temp);
+            System.out.println(temp+" degrés Farenheit est égal à "+tCelcius+" degrés Celcius");
+        }
+        else if (conv==4) {
+            tFarenheit=CelciusVersFarenheit(temp);
+            System.out.println(temp +" degrés Celcius est égal à "+tFarenheit+" degrés Farenheit");
+        }
+        else if (conv==5) {
+            tFarenheit=KelvinVersFarenheit(temp);
+            System.out.println(temp+" Kelvin est égal à "+tFarenheit+" degrés Farnheit");
+        }
+        else if (conv==6) {
+            tKelvin=FarenheitVersKelvin(temp);
+            System.out.println(temp+" degrés Farenheit est égal à "+tKelvin+" Kelvin");
+        }
     }
     public static double CelciusVersKelvin (double tCelcius) {
         double tKelvin;
