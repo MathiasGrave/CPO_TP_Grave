@@ -1,6 +1,6 @@
 /*
  * TP1
- * Exercice 1
+ * Exercice 2
  * Mathias Grave
  */
 package tp1_convertisseur_grave;
@@ -21,36 +21,37 @@ public class TP1_convertisseur_GRAVE {
         System.out.println("Bonjour, saisissez une valeur :");
         Scanner sc=new Scanner(System.in);
         temp=sc.nextDouble();
+        //Initialisation et demande de la valeur temp à l'utilisateur
         System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1) De Celcius vers Kelvin"+"\n2) De Kelvin vers Celcius"+"\n3) De Farenheit vers Celcius"+"\n4) De Celcius vers Farenheit"+"\n5) De Kelvin vers Farenheit"+"\n6) De Farenheit vers Kelvin");
         Scanner var=new Scanner(System.in);
+        //Demande de la conversion à effectuer
         int conv;
         conv=var.nextInt();
-        double tCelcius;
-        double tKelvin;
-        double tFarenheit;
+        double tfinale;
+        //initialisation
         if (conv==1) {
-            tKelvin=CelciusVersKelvin(temp);
-            System.out.println(temp+" degrés Celsius est égal à "+tKelvin+" degrés ");
+            tfinale=CelciusVersKelvin(temp);
+            System.out.println(temp+" degrés Celsius est égal à "+tfinale+" degrés ");
         }
         else if (conv==2) {
-            tCelcius=KelvinversCelcius(temp);
-            System.out.println(temp+" Kelvin est égal à "+tCelcius+" degrés ");    
+            tfinale=KelvinversCelcius(temp);
+            System.out.println(temp+" Kelvin est égal à "+tfinale+" degrés ");    
         }
         else if (conv==3){
-            tCelcius=FarenheitversCelcius(temp);
-            System.out.println(temp+" degrés Farenheit est égal à "+tCelcius+" degrés Celcius");
+            tfinale=FarenheitversCelcius(temp);
+            System.out.println(temp+" degrés Farenheit est égal à "+tfinale+" degrés Celcius");
         }
         else if (conv==4) {
-            tFarenheit=CelciusVersFarenheit(temp);
-            System.out.println(temp +" degrés Celcius est égal à "+tFarenheit+" degrés Farenheit");
+            tfinale=CelciusVersFarenheit(temp);
+            System.out.println(temp +" degrés Celcius est égal à "+tfinale+" degrés Farenheit");
         }
         else if (conv==5) {
-            tFarenheit=KelvinVersFarenheit(temp);
-            System.out.println(temp+" Kelvin est égal à "+tFarenheit+" degrés Farnheit");
+            tfinale=KelvinVersFarenheit(temp);
+            System.out.println(temp+" Kelvin est égal à "+tfinale+" degrés Farnheit");
         }
         else if (conv==6) {
-            tKelvin=FarenheitVersKelvin(temp);
-            System.out.println(temp+" degrés Farenheit est égal à "+tKelvin+" Kelvin");
+            tfinale=FarenheitVersKelvin(temp);
+            System.out.println(temp+" degrés Farenheit est égal à "+tfinale+" Kelvin");
         }
     }
     public static double CelciusVersKelvin (double tCelcius) {
