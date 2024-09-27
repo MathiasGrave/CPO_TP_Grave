@@ -44,8 +44,9 @@ public class TP1_guessMyNumber_Grave {
                     }
             }
                 else if (nb<n) {
-                    if (n-nb>50): 
+                    if (n-nb>50){
                     System.out.println("trop petit");
+                    }
             }
             Scanner var = new Scanner(System.in);
             nb=var.nextInt();
