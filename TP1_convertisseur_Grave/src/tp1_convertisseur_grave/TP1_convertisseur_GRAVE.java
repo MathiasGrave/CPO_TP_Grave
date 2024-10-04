@@ -1,7 +1,7 @@
-/* 
-* TP1
-* Mathias Grave
-* Exercice 2
+/*
+TP1
+ Mathias Grave
+ Exercice 2
 */
 
 package tp1_convertisseur_grave;
