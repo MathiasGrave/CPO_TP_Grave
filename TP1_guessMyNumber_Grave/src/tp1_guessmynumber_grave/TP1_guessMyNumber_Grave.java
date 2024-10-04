@@ -69,9 +69,8 @@ public class TP1_guessMyNumber_Grave {
                 else  {
                         System.out.println("Trop petit");
                     }
-            }
-            
             compte+=1;
+            }
             }
         else if (choix==3) {
          System.out.println("Vous avez choisi le mode difficile, vous avez 10 coups pour trouver le nombre");
