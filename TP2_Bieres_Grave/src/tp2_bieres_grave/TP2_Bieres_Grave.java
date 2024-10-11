@@ -23,12 +23,10 @@ public class TP2_Bieres_Grave {
         troisiemeBiere.lireEtiquette();
         BouteilleBiere quatriemeBiere = new BouteilleBiere("Triple Karmelite", 8.4, "Bosteels");
         quatriemeBiere.lireEtiquette();
+        quatriemeBiere.Decapsuler();
         BouteilleBiere cinquiemeBiere = new BouteilleBiere("Hoegaarden", 4.9, "Hoegaarden");
         cinquiemeBiere.lireEtiquette();
-        boolean ouverture=cinquiemeBiere.Decapsuler();
-        if (ouverture==true) {
-            System.out.println("La biere est ouverte !");
-        }
+        cinquiemeBiere.Decapsuler();
         System.out.println(uneBiere);
         System.out.println(secondeBiere);
         System.out.println(troisiemeBiere);
