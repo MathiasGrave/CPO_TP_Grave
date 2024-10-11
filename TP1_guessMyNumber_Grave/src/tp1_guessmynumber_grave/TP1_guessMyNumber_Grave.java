@@ -73,7 +73,7 @@ public class TP1_guessMyNumber_Grave {
             }
             }
         else if (choix==3) {
-         System.out.println("Vous avez choisi le mode difficile, vous avez 10 coups pour trouver le nombre");
+         System.out.println("Vous avez choisi le mode difficile, vous avez 5 coups pour trouver le nombre");
             while ((nb!=n)&&(compte<5)) {
                 Scanner sc = new Scanner(System.in);
             System.out.println("Entrez un nombre entre 1 et 100");
@@ -87,7 +87,7 @@ public class TP1_guessMyNumber_Grave {
             
             compte+=1;
             }
-            if ((nb!=n)&&(compte>=53)) {
+            if ((nb!=n)&&(compte>=5)) {
                 System.out.println("Vous n'avez pas trouver le bon nombre en 5 coups, la réponse est : "+n);
             }
         }
