@@ -5,6 +5,8 @@
  */
 package tp_convertisseurobjet_grave;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Grave
@@ -31,6 +33,41 @@ public class TP2_ConvertisseurObjet_GRAVE {
         System.out.println(tempK2);
         System.out.println(UneConversion);
         System.out.println(DeuxiemeConversion);
+        
+        double temp;
+        System.out.println("Bonjour, saisissez une valeur :");
+        Scanner sc=new Scanner(System.in);
+        temp=sc.nextDouble();        
+        System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1) De Celcius vers Kelvin"+"\n2) De Kelvin vers Celcius"+"\n3) De Farenheit vers Celcius"+"\n4) De Celcius vers Farenheit"+"\n5) De Kelvin vers Farenheit"+"\n6) De Farenheit vers Kelvin");
+        Scanner var=new Scanner(System.in);
+        //Demande de la conversion à effectuer
+        int conv;
+        conv=var.nextInt();
+        double tfinale;
+        if (conv==1) {
+            tfinale=UneConversion.CelciusVersKelvin(temp);
+            System.out.println(temp+" degrés Celsius est égal à "+tfinale+" degrés ");
+        }
+        else if (conv==2) {
+            tfinale=UneConversion.KelvinVersCelcius(temp);
+            System.out.println(temp+" Kelvin est égal à "+tfinale+" degrés ");    
+        }
+        else if (conv==3){
+            tfinale=UneConversion.FarenheitVersCelcius(temp);
+            System.out.println(temp+" degrés Farenheit est égal à "+tfinale+" degrés Celcius");
+        }
+        else if (conv==4) {
+            tfinale=UneConversion.CelciusVersFarenheit(temp);
+            System.out.println(temp +" degrés Celcius est égal à "+tfinale+" degrés Farenheit");
+        }
+        else if (conv==5) {
+            tfinale=UneConversion.KelvinVersFarenheit(temp);
+            System.out.println(temp+" Kelvin est égal à "+tfinale+" degrés Farnheit");
+        }
+        else if (conv==6) {
+            tfinale=UneConversion.FarenheitVersKelvin(temp);
+            System.out.println(temp+" degrés Farenheit est égal à "+tfinale+" Kelvin");
+        }
     }
 
 }
