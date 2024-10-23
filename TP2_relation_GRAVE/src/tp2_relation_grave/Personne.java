@@ -12,11 +12,11 @@ public class Personne {
     String nom;
     String prenom;
     int nbVoiture;
-    Voiture [] liste_Voitures;
+    Voiture [] liste_voitures;
     public Personne(String UnNom, String UnPrenom){
         UnNom=nom;
         UnPrenom=prenom;
-        liste_Voitures = new Voiture [3];
+        liste_voitures = new Voiture [3];
         nbVoiture=0;
     }
 
