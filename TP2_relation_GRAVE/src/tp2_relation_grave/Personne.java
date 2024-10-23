@@ -15,6 +15,12 @@ public class Personne {
         UnNom=nom;
         UnPrenom=prenom;  
     }
+
     @Override
+    public String toString() {
+        return "Personne{" + "nom=" + nom + ", prenom=" + prenom + '}';
+    }
+    
+    
     
 }

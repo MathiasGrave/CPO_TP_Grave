@@ -10,5 +10,20 @@ package tp2_relation_grave;
  * @author Grave
  */
 public class Voiture {
+    String marque;
+    String modele;
+    int PuissanceCV;
+    public Voiture(String UnModele, String UneMarque, int UnePuissance) {
+        UnModele=modele;
+        UneMarque=marque;
+        UnePuissance=PuissanceCV;
+    }
+
+    @Override
+    public String toString() {
+        return "Voiture{" + "marque=" + modele + ", modele=" + modele + ", PuissanceCV=" + PuissanceCV + '}';
+    }
+    
+    
     
 }
