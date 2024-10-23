@@ -14,14 +14,14 @@ public class Voiture {
     String modele;
     int PuissanceCV;
     public Voiture(String UnModele, String UneMarque, int UnePuissance) {
-        UnModele=modele;
-        UneMarque=marque;
-        UnePuissance=PuissanceCV;
+        modele=UnModele;
+        marque=UneMarque;
+        PuissanceCV=UnePuissance;
     }
 
     @Override
     public String toString() {
-        return "Voiture{" + "marque=" + modele + ", modele=" + modele + ", PuissanceCV=" + PuissanceCV + '}';
+        return "Voiture{" + "marque=" + marque + ", modele=" + modele + ", PuissanceCV=" + PuissanceCV + '}';
     }
     
     
