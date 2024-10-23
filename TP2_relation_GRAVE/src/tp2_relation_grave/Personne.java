@@ -11,9 +11,13 @@ package tp2_relation_grave;
 public class Personne {
     String nom;
     String prenom;
+    int nbVoiture;
+    Voiture [] liste_Voitures;
     public Personne(String UnNom, String UnPrenom){
         UnNom=nom;
-        UnPrenom=prenom;  
+        UnPrenom=prenom;
+        liste_Voitures = new Voiture [3];
+        nbVoiture=0;
     }
 
     @Override

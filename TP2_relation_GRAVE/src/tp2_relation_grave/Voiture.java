@@ -13,10 +13,12 @@ public class Voiture {
     String marque;
     String modele;
     int PuissanceCV;
+    Personne proprietaire;
     public Voiture(String UnModele, String UneMarque, int UnePuissance) {
         modele=UnModele;
         marque=UneMarque;
         PuissanceCV=UnePuissance;
+        proprietaire=null;
     }
 
     @Override
