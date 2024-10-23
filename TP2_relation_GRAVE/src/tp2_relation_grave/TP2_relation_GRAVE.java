@@ -20,7 +20,7 @@ public class TP2_relation_GRAVE {
         Voiture uneMicra = new Voiture ("Micra", "Nissan", 4 ) ;
         Personne bob = new Personne("Bobby", "Sixkiller");
         Personne reno = new Personne("Reno", "Raines");
-        System.out.println("liste des voitures disponibles "+ uneClio +"\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra );
+        System.out.println("liste des voitures disponibles "+ uneClio +"\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra);
     }
     
 }
