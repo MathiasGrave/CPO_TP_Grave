@@ -9,12 +9,12 @@ package tp2_relation_grave;
  *
  * @author Grave
  */
-public class Voiture {
-    String marque;
-    String modele;
-    int PuissanceCV;
+public class Voiture {// Création de la classe Voiture
+    String marque; // Création de la variable marque de type String, de la classe Voiture
+    String modele; //Création de la variable modele de type String, de la classe Voiture
+    int PuissanceCV; //Création de la variable PuissanceCV de type int, de la classe Voiture
     Personne proprietaire;
-    public Voiture(String UnModele, String UneMarque, int UnePuissance) {
+    public Voiture(String UnModele, String UneMarque, int UnePuissance) { // Création du constructeur
         modele=UnModele;
         marque=UneMarque;
         PuissanceCV=UnePuissance;
@@ -22,7 +22,7 @@ public class Voiture {
     }
 
     @Override
-    public String toString() {
+    public String toString() { //Création de la méthode toString()
         return "Voiture{" + "marque=" + marque + ", modele=" + modele + ", PuissanceCV=" + PuissanceCV + '}';
     }
     
