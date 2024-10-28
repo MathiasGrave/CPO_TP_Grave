@@ -9,9 +9,9 @@ package tp2_relation_grave;
  * @author Grave
  */
 public class Personne {
-    String nom; //Création de la variable nom, de type String, de la classe Personne
-    String prenom;//Création de la variable prénom, de type String, de la classe Personne
-    int nbVoiture; //Création de la variable nbVoiture, de typ int, de la classe Personne
+    String nom; //Création de l'attribut nom, de type String, de la classe Personne
+    String prenom;//Création de l'attribut prénom, de type String, de la classe Personne
+    int nbVoiture; //Création de l'attribut nbVoiture, de typ int, de la classe Personne
     Voiture [] liste_voitures; //Création de la variable liste_voitures, un tableau d'éléments de type Voiture, de la classe Personne
     public Personne(String UnNom, String UnPrenom){ //Création du constructeur
         UnNom=nom;

@@ -10,9 +10,9 @@ package tp2_relation_grave;
  * @author Grave
  */
 public class Voiture {// Création de la classe Voiture
-    String marque; // Création de la variable marque de type String, de la classe Voiture
-    String modele; //Création de la variable modele de type String, de la classe Voiture
-    int PuissanceCV; //Création de la variable PuissanceCV de type int, de la classe Voiture
+    String marque; // Création de l'attribut marque, de type String, de la classe Voiture
+    String modele; //Création de l'attribut modele, de type String, de la classe Voiture
+    int PuissanceCV; //Création de l'attribut PuissanceCV ,de type int, de la classe Voiture
     Personne proprietaire;
     public Voiture(String UnModele, String UneMarque, int UnePuissance) { // Création du constructeur
         modele=UnModele;
