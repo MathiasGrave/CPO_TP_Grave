@@ -9,8 +9,8 @@ package tp2_manip_grave;
  *
  * @author Grave
  */
-public class Tartiflette {
-    int nbCalories;
+public class Tartiflette { //Création de la classe Tartiflette
+    int nbCalories; //Initialisation de l'atribut nbCalories, de type int, de la classe Tartiflette
     public Tartiflette(int Calories) {
         nbCalories=Calories;
     }

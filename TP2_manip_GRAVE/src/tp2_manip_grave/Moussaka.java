@@ -8,9 +8,9 @@ package tp2_manip_grave;
  *
  * @author Grave
  */
-public class Moussaka {
-    int nbCalories;
+public class Moussaka { //Création de la classe Moussaka
+    int nbCalories; //Initialisation de l'atribut nbCalories, de type int, de la classe Moussaka
     public Moussaka(int Calories) {
-    Calories=nbCalories;
+    nbCalories=Calories;
     }
 }
