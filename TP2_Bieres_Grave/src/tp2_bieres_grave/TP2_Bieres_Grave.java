@@ -23,7 +23,9 @@ public class TP2_Bieres_Grave {
         troisiemeBiere.lireEtiquette();
         BouteilleBiere quatriemeBiere = new BouteilleBiere("Triple Karmelite", 8.4, "Bosteels");
         quatriemeBiere.lireEtiquette();
+        //Création de 4 objets de type BouteilleBiere, et affichage de leurs informations respectives
         quatriemeBiere.Decapsuler();
+        //Utilisation de la méthode Decapsuler() du quatrième objet créé
         BouteilleBiere cinquiemeBiere = new BouteilleBiere("Hoegaarden", 4.9, "Hoegaarden");
         cinquiemeBiere.lireEtiquette();
         cinquiemeBiere.Decapsuler();
