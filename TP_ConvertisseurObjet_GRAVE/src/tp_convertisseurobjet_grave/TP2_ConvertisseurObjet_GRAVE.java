@@ -17,18 +17,20 @@ public class TP2_ConvertisseurObjet_GRAVE {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Convertisseur UneConversion = new Convertisseur();
+        Convertisseur UneConversion = new Convertisseur(); //Création d'un premier objet de type Convertisseur
         double tempK=300;
-        double tempF = UneConversion.KelvinVersFarenheit(tempK);
+        double tempF = UneConversion.KelvinVersFarenheit(tempK); 
         double tempC = UneConversion.KelvinVersCelcius(tempK);
         double tempC2 = UneConversion.FarenheitVersCelcius(tempF);
+        //Utilisation des méthode de l'objet créé pour effectuer des conversions
         System.out.println(tempC);
         System.out.println(tempC2);
-        Convertisseur DeuxiemeConversion = new Convertisseur();
+        Convertisseur DeuxiemeConversion = new Convertisseur(); // Création d'un deuxième objet de type Convitisseur
         tempC=40;
         tempF = DeuxiemeConversion.CelciusVersFarenheit(tempC);
         tempK = DeuxiemeConversion.CelciusVersKelvin(tempC);
         double tempK2 = DeuxiemeConversion.FarenheitVersKelvin(tempF);
+        //Utilisation des méthode de l'objet 2 pour effectuer des conversion
         System.out.println(tempK);     
         System.out.println(tempK2);
         System.out.println(UneConversion);
@@ -46,7 +48,7 @@ public class TP2_ConvertisseurObjet_GRAVE {
         double tfinale;
         if (conv==1) {
             tfinale=UneConversion.CelciusVersKelvin(temp);
-            System.out.println(temp+" degrés Celsius est égal à "+tfinale+" degrés ");
+            System.out.println(temp+" degrés Celsius est égal à "+tfinale+" Kelvin");
         }
         else if (conv==2) {
             tfinale=UneConversion.KelvinVersCelcius(temp);
@@ -68,6 +70,6 @@ public class TP2_ConvertisseurObjet_GRAVE {
             tfinale=UneConversion.FarenheitVersKelvin(temp);
             System.out.println(temp+" degrés Farenheit est égal à "+tfinale+" Kelvin");
         }
-    }
+    }// Création d'une boucle if pour effectuer la conversion souhaité par l'utilisateur, et afficher la valeur obtenue.
 
 }
