@@ -8,7 +8,21 @@ package tp3_heroic_fantasy_grave;
  *
  * @author Grave
  */
-public class Baton extends Arme(nom, niveauAttaque) {
+public class Baton extends Arme {
+    private int age;
+    public Baton(String UnNom, int unNiveauAttaque) {
+        super(UnNom, unNiveauAttaque);
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+
     
     
 }
