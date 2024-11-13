@@ -4,6 +4,9 @@
  */
 package tp3_heroic_fantasy_grave;
 
+import Armes.Arme;
+import Armes.Baton;
+import Armes.Epee;
 import java.util.ArrayList;
 
 /**
