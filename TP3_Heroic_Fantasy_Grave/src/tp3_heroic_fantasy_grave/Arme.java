@@ -13,7 +13,13 @@ public abstract class Arme {
     private int niveauAttaque;
     public  Arme(String UnNom, int unNiveauAttaque) {
         UnNom=nom;
-        unNiveauAttaque=niveauAttaque;         
+        unNiveauAttaque=niveauAttaque;
+        if (unNiveauAttaque>100){
+            unNiveauAttaque=100;
+        }
+        else if (unNiveauAttaque<0) {
+            unNiveauAttaque=0;
+        }
     }
     
     public String getNom() {

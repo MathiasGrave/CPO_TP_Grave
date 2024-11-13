@@ -10,8 +10,15 @@ package tp3_heroic_fantasy_grave;
  */
 public class Baton extends Arme {
     private int age;
-    public Baton(String UnNom, int unNiveauAttaque) {
+    public Baton(String UnNom, int unNiveauAttaque, int unAge) {
         super(UnNom, unNiveauAttaque);
+        unAge=age;
+        if (unAge>=100) {
+            unAge=100;
+        }
+        else if (unAge<0) {
+            unAge=0;
+        }
     }
 
     public int getAge() {
@@ -19,8 +26,10 @@ public class Baton extends Arme {
     }
 
     public void setAge(int age) {
+        if ((age<100)&&(age>=0)) {
         this.age = age;
     }
+    }    
     
 
     
