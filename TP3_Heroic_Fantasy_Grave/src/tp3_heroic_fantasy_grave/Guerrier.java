@@ -11,7 +11,7 @@ package tp3_heroic_fantasy_grave;
 public class Guerrier extends Personnage{
     private boolean ACheval;
 
-    public Guerrier(boolean ACheval, String nom, int niveauDeVie) {
+    public Guerrier( String nom, int niveauDeVie, boolean ACheval) {
         super(nom, niveauDeVie);
         this.ACheval = ACheval;
     }
