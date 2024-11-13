@@ -32,6 +32,11 @@ public class TP3_Heroic_Fantasy_Grave {
         for (int i=0; i<longueur; i++) {
             System.out.println("L'arme "+i+" est : "+armes.get(i));
         }
+        Magicien Magicien1 = new Magicien("Gandalf", 65, true);
+        Magicien Magicien2 = new Magicien("Garcimore", 44, false);
+        Guerrier Guerrier1 = new Guerrier("Conan", 75, false);
+        Guerrier Guerrier2 = new Guerrier("Lannister", 45, true);
+        
         
     }
     
