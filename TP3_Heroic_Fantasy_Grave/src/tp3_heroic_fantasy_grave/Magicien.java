@@ -11,7 +11,7 @@ package tp3_heroic_fantasy_grave;
 public class Magicien extends Personnage{
     private boolean Confirme;
 
-    public Magicien(boolean Confirme, String nom, int niveauDeVie) {
+    public Magicien(String nom, int niveauDeVie, boolean Confirme) {
         super(nom, niveauDeVie);
         this.Confirme = Confirme;
     }

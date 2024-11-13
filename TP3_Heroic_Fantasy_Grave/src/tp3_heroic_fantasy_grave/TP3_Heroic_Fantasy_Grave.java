@@ -36,6 +36,16 @@ public class TP3_Heroic_Fantasy_Grave {
         Magicien Magicien2 = new Magicien("Garcimore", 44, false);
         Guerrier Guerrier1 = new Guerrier("Conan", 75, false);
         Guerrier Guerrier2 = new Guerrier("Lannister", 45, true);
+        ArrayList<Personnage> perso = new ArrayList<Personnage>();
+        perso.add(Guerrier1);
+        perso.add(Guerrier2);
+        perso.add(Magicien1);
+        perso.add(Magicien2);
+        int taille = perso.size();
+        for (int j=0; j<taille; j++) {
+            System.out.println("Le personnage "+j+" est : "+perso.get(j));
+        }
+        
         
         
     }
