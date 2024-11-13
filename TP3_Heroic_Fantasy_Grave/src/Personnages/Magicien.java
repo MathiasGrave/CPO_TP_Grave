@@ -2,22 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heroic_fantasy_grave;
+package Personnages;
 
 /**
  *
  * @author Grave
  */
-public class Guerrier extends Personnage{
-    private boolean ACheval;
+public class Magicien extends Personnage{
+    private boolean Confirme;
 
-    public Guerrier( String nom, int niveauDeVie, boolean ACheval) {
+    public Magicien(String nom, int niveauDeVie, boolean Confirme) {
         super(nom, niveauDeVie);
-        this.ACheval = ACheval;
+        this.Confirme = Confirme;
     }
 
-    public void setACheval(boolean ACheval) {
-        this.ACheval = ACheval;
+    public boolean setConfirme() {
+        return Confirme;
     }
+    
     
 }

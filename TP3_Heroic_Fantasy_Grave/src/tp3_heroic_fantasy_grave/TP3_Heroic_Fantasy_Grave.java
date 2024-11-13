@@ -4,6 +4,9 @@
  */
 package tp3_heroic_fantasy_grave;
 
+import Personnages.Personnage;
+import Personnages.Magicien;
+import Personnages.Guerrier;
 import Armes.Arme;
 import Armes.Baton;
 import Armes.Epee;
@@ -45,6 +48,7 @@ public class TP3_Heroic_Fantasy_Grave {
         for (int j=0; j<taille; j++) {
             System.out.println("Le personnage "+j+" est : "+perso.get(j));
         }
+        
         
         
         
