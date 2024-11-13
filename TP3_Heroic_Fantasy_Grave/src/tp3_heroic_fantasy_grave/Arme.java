@@ -12,8 +12,8 @@ public abstract class Arme {
     private String nom;
     private int niveauAttaque;
     public  Arme(String UnNom, int unNiveauAttaque) {
-        UnNom=nom;
-        unNiveauAttaque=niveauAttaque;
+        nom=UnNom;
+        niveauAttaque=unNiveauAttaque;
         if (unNiveauAttaque>100){
             unNiveauAttaque=100;
         }

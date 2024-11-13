@@ -12,7 +12,7 @@ public class Baton extends Arme {
     private int age;
     public Baton(String UnNom, int unNiveauAttaque, int unAge) {
         super(UnNom, unNiveauAttaque);
-        unAge=age;
+        age=unAge;
         if (unAge>=100) {
             unAge=100;
         }

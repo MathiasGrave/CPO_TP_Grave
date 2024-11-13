@@ -27,7 +27,7 @@ public class TP3_Heroic_Fantasy_Grave {
         armes.add(Durandal);
         int longueur=armes.size();
         for (int i=0; i<longueur; i++) {
-            System.out.println("L'arme n°"+i+"est : "+armes.get(i));
+            System.out.println("L'arme "+i+" est : "+armes.get(i));
         }
         
     }
