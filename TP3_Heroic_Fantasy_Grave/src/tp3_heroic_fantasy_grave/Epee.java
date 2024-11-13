@@ -12,7 +12,7 @@ public class Epee extends Arme{
     int indiceDeFinesse;
     public Epee(String UnNom, int unNiveauAttaque, int unIndiceDeFinesse) {
         super(UnNom, unNiveauAttaque);
-        unIndiceDeFinesse=indiceDeFinesse;
+        indiceDeFinesse=unIndiceDeFinesse;
         if (unIndiceDeFinesse>=100) {
            unIndiceDeFinesse=100;
         }
