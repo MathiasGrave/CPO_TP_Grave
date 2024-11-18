@@ -34,8 +34,7 @@ public abstract class  Personnage { // Créeation de la classe et de ses attibut
     public void setNiveauDeVie(int niveauDeVie) {
         this.niveauDeVie = niveauDeVie;
     }
-    ArrayList Liste_Armes; //Création de la liste dynamique d'armes que le personnages peut posséder
-    
+    public ArrayList Liste_Armes = new ArrayList<Arme>(); //Création de la liste dynamique d'armes que le personnages peut posséder
 
     public void ajout_Arme(Arme nouvelleArme) {
         if (Liste_Armes==null){
@@ -80,6 +79,8 @@ public abstract class  Personnage { // Créeation de la classe et de ses attibut
         int longueur = Liste_Armes.size();
         return longueur;
     }
+
+
     
     
     
