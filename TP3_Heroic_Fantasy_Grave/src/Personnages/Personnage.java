@@ -34,11 +34,15 @@ public abstract class  Personnage { // Créeation de la classe et de ses attibut
     public void setNiveauDeVie(int niveauDeVie) {
         this.niveauDeVie = niveauDeVie;
     }
-    ArrayList Armes; //Création de la liste dynamique d'armes que le personnages peut posséder
-    int longueur= Armes.size();
+    ArrayList Liste_Armes; //Création de la liste dynamique d'armes que le personnages peut posséder
+    
+
     public void ajout_Arme(Arme nouvelleArme) {
-        if (longueur<5){
-            Armes.add(nouvelleArme);
+        if (Liste_Armes==null){
+            Liste_Armes.add(nouvelleArme);
+        }
+        else if (Liste_Armes.size()<5){
+            Liste_Armes.add(nouvelleArme);
         }
     }
 
@@ -49,8 +53,8 @@ public abstract class  Personnage { // Créeation de la classe et de ses attibut
     }
     
     public Arme Porter_une_arme(Arme Arme_a_porter){
-        for (int i=0;i<longueur; i++){
-            if (Arme_a_porter==Armes.get(i)){
+        for (int i=0;i<Liste_Armes.size(); i++){
+            if (Arme_a_porter==Liste_Armes.get(i)){
                 Arme_en_main=Arme_a_porter;
                 System.out.println(Arme_a_porter + " a bien été ajoutée comme arme de prédilection");
             }
@@ -68,8 +72,13 @@ public abstract class  Personnage { // Créeation de la classe et de ses attibut
         return "Personnage{" + "nom=" + nom + ", niveauDeVie=" + niveauDeVie + "arme de prédilection : "+Arme_en_main +'}';
         }
         else {
-            return "Personnage{" + "nom=" + nom + ", niveauDeVie=" + niveauDeVie + "}0";
+            return "Personnage{" + "nom=" + nom + ", niveauDeVie=" + niveauDeVie + "}";
         }
+    }
+    
+    public int longueur(){
+        int longueur = Liste_Armes.size();
+        return longueur;
     }
     
     
