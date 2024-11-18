@@ -59,7 +59,7 @@ public class TP3_Heroic_Fantasy_Grave {
         System.out.println(Magicien1.Liste_Armes.size());
         System.out.println(Magicien1);
         for (int i=0;i>Magicien1.Liste_Armes.size();i++){
-            System.out.println(Liste_Armes);
+            System.out.println(Magicien1.Liste_Armes.get(i));
         }
         System.out.println(Guerrier2);
         
