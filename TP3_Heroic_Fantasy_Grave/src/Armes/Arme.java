@@ -8,10 +8,10 @@ package Armes;
  *
  * @author Grave
  */
-public abstract class Arme {
+public abstract class Arme { //Création de la classe et de ses attributs
     private String nom;
     private int niveauAttaque;
-    public  Arme(String UnNom, int unNiveauAttaque) {
+    public  Arme(String UnNom, int unNiveauAttaque) { //Création du constructeur et de la méthode vérifiant que le niveau d'attaque est inférieur à 100
         nom=UnNom;
         niveauAttaque=unNiveauAttaque;
         if (unNiveauAttaque>100){
@@ -22,7 +22,7 @@ public abstract class Arme {
         }
     }
     
-    public String getNom() {
+    public String getNom() { 
         return nom;
     }
 
@@ -34,7 +34,7 @@ public abstract class Arme {
         return niveauAttaque;
     }
 
-    public void setNiveauAttaque(int niveauAttaque) {
+    public void setNiveauAttaque(int niveauAttaque) { 
         if (niveauAttaque<=100) {
             this.niveauAttaque = niveauAttaque;
         }

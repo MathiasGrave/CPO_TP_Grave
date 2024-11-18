@@ -18,7 +18,6 @@ public abstract class  Personnage { // Créeation de la classe et de ses attibut
         this.nom = nom;
         this.niveauDeVie = niveauDeVie;
     }
-
     public String getNom() {
         return nom;
     }
@@ -74,14 +73,4 @@ public abstract class  Personnage { // Créeation de la classe et de ses attibut
             return "Personnage{" + "nom=" + nom + ", niveauDeVie=" + niveauDeVie + "}";
         }
     }
-    
-    public int longueur(){
-        int longueur = Liste_Armes.size();
-        return longueur;
-    }
-
-
-    
-    
-    
 }
