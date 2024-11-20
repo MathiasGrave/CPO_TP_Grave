@@ -62,7 +62,11 @@ public abstract class  Personnage { // Créeation de la classe et de ses attibut
         }
         return Arme_en_main;
     }
-    
+    static int compteurPerso;
+    public static int compteur() {
+        compteurPerso++;
+        return compteurPerso;
+    }
     
     @Override
     public String toString() {

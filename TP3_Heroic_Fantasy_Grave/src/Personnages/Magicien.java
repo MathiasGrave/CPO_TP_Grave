@@ -15,7 +15,11 @@ public class Magicien extends Personnage{
         super(nom, niveauDeVie);
         this.Confirme = Confirme;
     }
-
+    static int compteurMagicien;
+    public static int compteur(){
+        compteurMagicien++;
+        return compteurMagicien;
+    }
     public boolean setConfirme() {
         return Confirme;
     }

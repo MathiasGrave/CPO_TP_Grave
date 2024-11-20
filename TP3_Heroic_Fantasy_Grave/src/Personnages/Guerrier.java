@@ -15,6 +15,11 @@ public class Guerrier extends Personnage{
         super(nom, niveauDeVie);
         this.ACheval = ACheval;
     }
+    static int compteurGuerrier;
+    public static int compteur(){
+        compteurGuerrier++;
+        return compteurGuerrier;
+    }
 
     public void setACheval(boolean ACheval) {
         this.ACheval = ACheval;
