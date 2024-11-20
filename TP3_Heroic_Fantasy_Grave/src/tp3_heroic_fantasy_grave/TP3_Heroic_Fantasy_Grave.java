@@ -60,8 +60,7 @@ public class TP3_Heroic_Fantasy_Grave {
         System.out.println(Magicien1);
         int taille1=Magicien1.Liste_Armes.size();
         for (int i=0;i>taille1 ;i++){
-            Arme Arme_a_afficher = (Arme) Magicien1.Liste_Armes.get(i);
-            System.out.println(Arme_a_afficher);
+            System.out.println(Magicien1.Liste_Armes.get(i));
         }
         System.out.println(Guerrier2);
         
